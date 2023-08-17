@@ -1,0 +1,151 @@
+:root{
+    font-family:  'Courier New', Courier, monospace;
+}
+
+/* HEADER */
+.header{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    display: flex;
+    z-index: 100;
+    color: white;
+
+}
+#main-header {
+    background-color: transparent; /* Fondo inicial */
+    transition: background-color 0.5s ease; /* Transición suave */
+}
+.nav a{
+    color: white;
+}
+.nav{
+    margin-left: -40px;
+    margin-top: 10px;
+}
+
+.ul-nav{
+    display: flex;
+}
+
+.nav li{
+    list-style: none;
+    margin-left: 30px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.nav a{
+    text-decoration:  none;
+}
+
+.nav li:hover{
+    text-decoration:underline;
+}
+
+.header_buttons{
+   position: absolute;
+   right: 0;
+   top: 10px;
+}
+
+.label_header{
+    font-size: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.header_section{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('img/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 500px;
+    filter: brightness(50%)
+}
+
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    border: 1px solid #ccc;
+    width: auto;
+}
+
+.dropdown-item{
+    position: relative;
+    left: -40px;
+    font-size: 19px;
+    color: white;
+}
+
+.dropdown-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 8px 15px; 
+}
+
+.dropdown-menu li:not(:last-child) {
+    margin-bottom: 8px; 
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* PRODUCTOS */
+
+.section_productos{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 95%;
+}
+
+.img_producto{
+    position: relative;
+    width: 40%;
+    height: 90vh;
+
+}
+
+.img_producto img{
+    width: 100%;
+    height: 95vh;
+}
+
+.container_producto{
+    position: absolute;
+    left: 40%;
+    font-size: 25px;
+    top: 0;
+    width: 60%;
+    height: auto;
+    text-align: center;
+}
+
+
+.carrusel_productos{
+    width: 100%;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 65%;
+  margin: auto;
+  height: 70vh;
+  }
