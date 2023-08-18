@@ -8,3 +8,13 @@ window.addEventListener('scroll', function() {
         header.style.backgroundColor = 'transparent'; // Volver al color inicial cuando el scroll sea menor
     }
 });
+
+const shakingImage = document.getElementById("shaking-image");
+
+shakingImage.addEventListener("mousemove", () => {
+  shakingImage.classList.add("shake-animation");
+});
+
+shakingImage.addEventListener("mouseleave", () => {
+  shakingImage.classList.remove("shake-animation");
+});

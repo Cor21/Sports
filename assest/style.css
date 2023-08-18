@@ -58,7 +58,7 @@
 }
 
 .header_section{
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
     background-image: url('img/banner.jpg');
@@ -109,11 +109,11 @@
 /* PRODUCTOS */
 
 .section_productos{
-    position: absolute;
+    position: relative;
     width: 100%;
     height: auto;
     left: 0;
-    top: 95%;
+   margin-top: 5%;
 }
 
 .img_producto{
@@ -149,3 +149,80 @@
   margin: auto;
   height: 70vh;
   }
+
+  /*BENEFICIOS*/
+  .section_beneficios{
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+    margin-top: 10%;
+  }
+  .content_pos{
+    top: 40px;
+    position: absolute;
+    width: 30%;
+    height: 80px;
+    left: 1%;
+  
+  }
+
+  .content_pos2{
+    top: 40px;
+    position: absolute;
+    width: 30%;
+    height: 80px;
+    left: 25%;
+  
+  }
+
+  .content_pos3{
+    top: 40px;
+    position: absolute;
+    width: 30%;
+    height: 80px;
+    left: 55%;
+  
+  }
+
+  .content_pos4{
+    top: 40px;
+    position: absolute;
+    width: 20%;
+    height: 80px;
+    left: 80%;
+  
+  }
+.content_benef img{
+    position: absolute;
+    width: 70px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.content_benef h5{
+    position: relative;
+    top: 10px;
+     margin-left: 80px;
+     margin-top: 15px;
+     font-size: 15px;
+}
+
+.content_benef:hover img {
+    animation: shake 5s ease-in-out infinite;
+  }
+  
+  .content_benef:hover h5 {
+    color: blueviolet;
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+    }
+}
