@@ -21,9 +21,11 @@
                                 <li> <a class="dropdown-item" href="#">Deportiva</a></li>
                                 <li> <a class="dropdown-item" href="#">Camisas</a></li>
                                 <li> <a class="dropdown-item" href="#">Pantalones</a></li>
+                                <li> <a class="dropdown-item" href="#">Chaquetas</a></li>
                                 <li> <a class="dropdown-item" href="#">Pijamas</a></li>
                                 <li> <a class="dropdown-item" href="#">Ropa Interior</a></li>
                                 <li> <a class="dropdown-item" href="#">Medias</a></li>
+                                <li> <a class="dropdown-item" href="#">Tenis</a></li>
                             </ul>
                         </div>
                 </li>
@@ -37,6 +39,7 @@
                             <li> <a class="dropdown-item" href="#">Pijamas</a></li>
                             <li> <a class="dropdown-item" href="#">Ropa Interior</a></li>
                             <li> <a class="dropdown-item" href="#">Medias</a></li>
+                            <li> <a class="dropdown-item" href="#">Tenis</a></li>
                         </ul>
                     </div>
             </li>
@@ -44,10 +47,13 @@
                 <div class="dropdown-menu">
                     <ul>
                         <li> <a class="dropdown-item" href="#">Deportiva</a></li>
-                        <li> <a class="dropdown-item" href="#">Camisas</a></li>
-                        <li> <a class="dropdown-item" href="#">Pantalones</a></li>
+                        <li> <a class="dropdown-item" href="#">Camisas Niños</a></li>
+                        <li> <a class="dropdown-item" href="#">Camisas Niñas</a></li>
+                        <li> <a class="dropdown-item" href="#">Pantalones Niños</a></li>
+                        <li> <a class="dropdown-item" href="#">Pantalones Niñas</a></li>
                         <li> <a class="dropdown-item" href="#">Pijamas</a></li>
                         <li> <a class="dropdown-item" href="#">Medias</a></li>
+                        <li> <a class="dropdown-item" href="#">tenis</a></li>
                     </ul>
                 </div>
         </li>
@@ -55,9 +61,13 @@
             </ul>
         </nav>
             <div class="header_buttons">
-                <label class="label_header"><i class="fa fa-truck"></i></label>
-                <label class="label_header"><i class="fa fa-search"></i></label>
-                <label class="label_header"><i class="fa fa-shopping-bag"></i></label>
+                <label class="label_header"><a class="icon1_header"><i class="fa fa-truck"></i></a></label>
+                <label class="label_header"><a class="icon2_header" id="icon2_header"><i class="fa fa-search"></i></a></label>
+                <label class="label_header"><a class="icon3_header"><i class="fa fa-shopping-bag"></i></a></label>
+            </div>
+
+            <div class="search" id="search">
+                <input type="search" placeholder="busca tus productos">
             </div>
     </header>
     <section class="header_section">
@@ -183,36 +193,413 @@
 
 <section class="section_beneficios">
     <center>
-        <h3>Beneficios cuando compras con Nosotros</h3>
+        <h2>Beneficios cuando compras con Nosotros</h2>
     </center>
-    <div class="content_pos">
-        <article class="content_benef">
-            <img id="shaking-image" src="assest/img/icon1.svg" alt="Mapa">
-            <h5>Envío gratis</h5>
-            <h5>En todos los pedidos</h5>
-        </article>
+    <div class="container_beneficios">
+        <div class="content_pos">
+            <article class="content_benef">
+                <img id="shaking-image" src="assest/img/icon1.svg" alt="Mapa">
+                <h5>Envío gratis</h5>
+                <h5>En todos los pedidos</h5>
+            </article>
+        </div>
+        <div class="content_pos2">
+            <article class="content_benef">
+                <img id="shaking-image" src="assest/img/icon2.svg" alt="Telefono">
+                <h5>Soporte disponible las 24 horas</h5>
+                <h5>Los 7 días de la semana para ti</h5>
+            </article>
+        </div>
+        <div class="content_pos3">
+            <article class="content_benef">
+                <img id="shaking-image" src="assest/img/icon3.svg" alt="Saco">
+                <h5>Ropa con la máxima calidad</h5>
+                <h5>Para un estilo que perdura</h5>
+            </article>
+        </div>
+    
+        <div class="content_pos4">
+            <article class="content_benef">
+                <img id="shaking-image" src="assest/img/icon4.svg" alt="Dinero">
+                <h5>Descuentos irresistibles</h5>
+                <h5>para tu estilo perfecto</h5>
+            </article>
+        </div>
     </div>
-    <div class="content_pos2">
-        <article class="content_benef">
-            <img id="shaking-image" src="assest/img/icon2.svg" alt="Telefono">
-            <h5>Soporte disponible las 24 horas</h5>
-            <h5>Los 7 días de la semana para ti</h5>
-        </article>
-    </div>
-    <div class="content_pos3">
-        <article class="content_benef">
-            <img id="shaking-image" src="assest/img/icon3.svg" alt="Saco">
-            <h5>Ropa con la máxima calidad</h5>
-            <h5>Para un estilo que perdura</h5>
-        </article>
-    </div>
+</section>
 
-    <div class="content_pos4">
-        <article class="content_benef">
-            <img id="shaking-image" src="assest/img/icon4.svg" alt="Dinero">
-            <h5>Descuentos irresistibles</h5>
-            <h5>para tu estilo perfecto</h5>
-        </article>
+<!-- categorias para prendas, divido por genero y rengo de edad -->
+<section class="section_categoria">
+
+    <nav class="nav_prendas">
+        <h2>Explora Nuestra Colección</h2>
+        <ul>
+            <li id="hombre_prendas">Hombre</li>
+            <li id="mujer_prendas">Mujer</li>
+            <li id="kid_prendas">Kids</li>
+        </ul>
+    </nav>
+
+    <div class="contenido" id="contenido_hombre">
+        <div class="title_categoria">
+            <h3>Hombres</h3>
+        </div>
+        <div class="carta_container">
+            <ul class="cartas">
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_hombre_1.jpg" alt="ropa_hombre">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Ropa Deportiva Hombre</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_hombre_2.jpg" alt="ropa_hombre">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Camisas Hombre</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_hombre_3.jpg" alt="ropa_hombre">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Pantalones Hombre</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+    
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_hombre_4.jpg" alt="ropa_hombre">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Chaquetas hombre</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_hombre_5.jpg" alt="ropa_hombre">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Pijamas Hombre</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_hombre_6.jpg" alt="ropa_hombre">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Ropa interior Hombre</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_hombre_7.jpg" alt="ropa_hombre">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Medias Hombre</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_hombre_8.jpg" alt="ropa_hombre">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Tennis Hombre</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+           
+            </ul>
+         
+        </div>
+    </div>
+    <div class="contenido" id="contenido_mujer">
+        <div class="title_categoria">
+            <h3>Mujeres</h3>
+        </div>
+
+        <div class="carta_container">
+            <ul class="cartas">
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_mujer_1.jpg" alt="ropa_Mujer">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Ropa Deportiva Mujer</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_mujer_2.jpg" alt="ropa_Mujer">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Camisas Mujer</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_mujer_3.jpg" alt="ropa_Mujer">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Pantalones Mujer</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_mujer_4.jpg" alt="ropa_Mujer">
+                            </div>
+                            <div class="content_carta">
+                                <h4>faldas Mujer</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_mujer_5.jpg" alt="ropa_Mujer">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Pijamas</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_mujer_6.jpg" alt="ropa_Mujer">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Ropa interior Mujer</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_mujer_7.jpg" alt="ropa_Mujer">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Medias Mujer</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_mujer_8.jpg" alt="ropa_Mujer">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Tennis Mujer</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+    <div class="contenido" id="contenido_kid">
+        <div class="title_categoria">
+            <h3>Niños</h3>
+        </div>
+        <div class="carta_container">
+            <ul class="cartas">
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_kids_1.jpg" alt="ropa_kids">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Ropa Deportiva Niños</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_kids_2.jpg" alt="ropa_kids">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Camisas Niño</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+           
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_kids_3.jpg" alt="ropa_kids">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Camisas Niña</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_kids_4.jpg" alt="ropa_kids">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Pantalon Niño</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_kids_5.jpg" alt="ropa_kids">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Pantalon Niña</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_kids_6.jpg" alt="ropa_kids">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Pijamas</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_kids_7.jpg" alt="ropa_kids">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Medias</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="carta_item">
+                    <div class="carta">
+                        <a href="#">
+                            <div class="img_carta">
+                                <img src="assest/img/ropa_kids_8.jpg" alt="ropa_kids">
+                            </div>
+                            <div class="content_carta">
+                                <h4>Medias</h4>
+                                <a href="#"><button type="button">MIRAR MÁS</button></a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
     </div>
 </section>
 

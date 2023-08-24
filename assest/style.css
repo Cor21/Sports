@@ -2,6 +2,11 @@
     font-family:  'Courier New', Courier, monospace;
 }
 
+.body{
+    padding: 0;
+    margin: 0;
+}
+
 /* HEADER */
 .header{
     position: fixed;
@@ -49,8 +54,12 @@
    position: absolute;
    right: 0;
    top: 10px;
+   
 }
 
+.label_header a{
+    color: white;
+}
 .label_header{
     font-size: 20px;
     margin-right: 40px;
@@ -105,6 +114,20 @@
     display: block;
 }
 
+.search{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top:40px;
+    transition: 0.5s;
+    display: none;
+}
+.search input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    color: #000;
+}
 
 /* PRODUCTOS */
 
@@ -158,8 +181,12 @@
     left: 0;
     margin-top: 10%;
   }
+  .container_beneficios{
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+  }
   .content_pos{
-    top: 40px;
     position: absolute;
     width: 30%;
     height: 80px;
@@ -168,7 +195,6 @@
   }
 
   .content_pos2{
-    top: 40px;
     position: absolute;
     width: 30%;
     height: 80px;
@@ -177,7 +203,6 @@
   }
 
   .content_pos3{
-    top: 40px;
     position: absolute;
     width: 30%;
     height: 80px;
@@ -186,7 +211,6 @@
   }
 
   .content_pos4{
-    top: 40px;
     position: absolute;
     width: 20%;
     height: 80px;
@@ -211,10 +235,7 @@
     animation: shake 5s ease-in-out infinite;
   }
   
-  .content_benef:hover h5 {
-    color: blueviolet;
-  }
-  
+ /*Animacion de los beneficios*/
   @keyframes shake {
     0%, 100% {
       transform: translateX(0);
@@ -226,3 +247,122 @@
       transform: translateX(5px);
     }
 }
+
+/* section categoria */
+
+.section_categoria{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 150px;
+}
+
+.nav_prendas{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    background-image: url(img/banner_cat.svg);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.nav_prendas ul{
+    margin-top: 15px;
+    margin-left: -11%;
+    display: flex;
+}
+
+.nav_prendas li{
+    list-style: none;
+    margin-left: 100px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.nav_prendas li:hover{
+    text-decoration:underline;
+}
+
+.title_categoria{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.contenido{
+    max-width: 1200px;
+    margin: auto;
+}
+.contenido a{
+    text-decoration: none;
+}
+
+.carta_container{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.cartas {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.carta_item {
+    display: flex;
+    padding: 2rem;
+  }
+  
+
+.carta{
+  width: 25rem;
+  height: 60vh;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(58,31,74,1) 53%, rgba(37,37,37,1) 100%);
+  
+}
+
+.img_carta{
+    width: 100%;
+    height: 45vh;
+    transition: transform 0.3s; 
+}
+
+.img_carta img{
+    width: 100%;
+    height: 45vh;
+}
+
+.content_carta{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.carta:hover img {
+    transform: scale(1.0);
+}
+
+.content_carta h4{
+    color: white;
+}
+
+.contenido {
+    display: none; /* Oculta todos los contenidos */
+}
+.content_carta button{
+    padding: 5px 10px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: 1.5s;
+}
+
+.content_carta button:hover{
+    background-color: rgb(77, 75, 75);
+}
+
