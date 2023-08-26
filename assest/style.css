@@ -129,6 +129,15 @@
     color: #000;
 }
 
+.icon_arrow_right{
+    position: absolute;
+    color: #000;
+    font-size: 20px;
+    right: 20px;
+    top: 5px;
+    cursor: pointer;
+}
+
 /* PRODUCTOS */
 
 .section_productos{
@@ -253,7 +262,7 @@
 .section_categoria{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     top: 150px;
 }
 
@@ -291,17 +300,11 @@
     place-items: center;
 }
 .contenido{
-    max-width: 1200px;
-    margin: auto;
+    margin-left: 5.5rem;
+
 }
 .contenido a{
     text-decoration: none;
-}
-
-.carta_container{
-    width: 100%;
-    display: grid;
-    place-items: center;
 }
 
 .cartas {
@@ -366,3 +369,67 @@
     background-color: rgb(77, 75, 75);
 }
 
+.carousel-wrap {
+    margin: 90px auto;
+    padding: 0 5%;
+    width: 80%;
+    position: relative;
+  }
+  
+
+/* Section marcas*/
+ .section_marcas{
+    position: relative;
+    height: auto;
+    left: 0;
+    margin-top: 15%;
+ }
+
+ .carousel-wrap {
+    margin: 90px auto;
+    padding: 0 5%;
+    width: 70%;
+    position: relative;
+  }
+  
+  .carrousel_marcas{
+    position: relative;
+    margin-top: -9%;
+  }
+
+  .owl-carousel .item {
+    position: relative;
+    z-index: 100; 
+    -webkit-backface-visibility: hidden; 
+  }
+  
+
+  .owl-nav > div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color:rgb(0, 0, 0);
+  }
+  
+  .owl-nav i {
+    font-size: 52px;
+  }
+  
+  .owl-nav .owl-prev {
+    left: -30px;
+  }
+  
+  .owl-nav .owl-next {
+    right: -30px;
+  }
+  
+  .marca{
+    display:flex;
+    align-items:center;
+    height: 180px;
+  }
+
+  .marca:hover{
+    transform: scale(1.3);
+  }
+  

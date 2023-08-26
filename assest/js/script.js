@@ -1,14 +1,16 @@
+// Header animations
 window.addEventListener('scroll', function() {
     const header = document.getElementById('main-header');
     const scrollPosition = window.scrollY;
 
-    if (scrollPosition > 100) { // Cambiar el valor para ajustar cuándo debe ocurrir el cambio de color
-        header.style.backgroundColor = 'black'; // Cambiar el color de fondo al hacer scroll
+    if (scrollPosition > 100) { 
+        header.style.backgroundColor = 'black'; 
     } else {
-        header.style.backgroundColor = 'transparent'; // Volver al color inicial cuando el scroll sea menor
+        header.style.backgroundColor = 'transparent';
     }
 });
 
+// header input search
  const iconSearch = document.getElementById("icon2_header");
  const searchInput = document.getElementById("search");
  let isInputConfirm = false;
@@ -76,3 +78,31 @@ function mostrarContenidoKid() {
 
 mostrarContenidoHombre();
 //termina
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    center:true,
+    margin: 10,
+    nav: true,
+    navText: [
+      "<i class='fa fa-caret-left'></i>",
+      "<i class='fa fa-caret-right'></i>"
+    ],
+    autoplay: true,
+    autoplayHoverPause: true,
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  })
