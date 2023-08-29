@@ -106,3 +106,32 @@ $('.owl-carousel').owlCarousel({
       }
     }
   })
+
+  //efecto Modal
+  const open_button = document.getElementById('open_modal_Button');
+  const close_button = document.getElementById('close');
+  const modal = document.getElementById('Modal');
+  let status_model = true;
+
+      open_button.addEventListener('click', ControlStatusModal); 
+
+      close_button.addEventListener('click',functionCloseModal)
+
+      function functionOpenModal(){
+        modal.style.display = 'block';
+        status_model = false;
+      }
+      function functionCloseModal(){
+          modal.style.display = 'none';
+          status_model = true;
+      }
+
+      function ControlStatusModal(){
+        if(status_model === true){
+          functionOpenModal();
+        }else{
+          functionCloseModal();
+        }
+      }
+
+ 

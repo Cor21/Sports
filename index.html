@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
     <link rel="stylesheet" href="assest/style.css">
+    <link rel="icon" href="assest/img/logo.ico">
     <title>Sports</title>
 </head>
 <body>
@@ -64,7 +64,7 @@
             </ul>
         </nav>
             <div class="header_buttons">
-                <label class="label_header"><a class="icon1_header"><i class="fa fa-truck"></i></a></label>
+                <label class="label_header"><a class="icon1_header" id="open_modal_Button"><i class="fa fa-truck"></i></a></label>
                 <label class="label_header"><a class="icon2_header" id="icon2_header"><i class="fa fa-search"></i></a></label>
                 <label class="label_header"><a class="icon3_header"><i class="fa fa-shopping-bag"></i></a></label>
             </div>
@@ -73,10 +73,31 @@
                 <label class="icon_arrow_right" id="icon_arrow_right"><i class="fa fa-arrow-right"></i></label>
                 <input type="search" placeholder="busca tus productos">
             </div>
+             <!--  buscar el pedido -->
+            <div class="modal" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                <h5 class="modal-title" >Rastrear pedido</h5>
+                <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <form action="#" method="get" autocomplete="off">
+                    <div class="modal-body">
+                        <label for="modal_search">Ingresa el número de referencia</label>
+                        <input  id="modal_search"type="search" class="modal_search" placeholder="Ingresa la refencia" autocomplete="off" required>
+                    </div>
+                    <div class="modal-footer">
+                         <button type="submit">Buscar</button>
+                    </div>
+                </form>
+            </div>
+<!--  aqui acaba -->
     </header>
     <section class="header_section">
     </section>
+
    
+<main>
   <section class="section_productos">
     <div class="img_producto">
         <img src="assest/img/Camisa Sport.png" alt="gente con ropa">
@@ -623,12 +644,67 @@
               <div class="marca"><img src="assest/img/marca8.png"></div>
               <div class="marca"><img src="assest/img/marca9.png"></div>
               <div class="marca"><img src="assest/img/marca10.png"></div>
-              <div class="marca"><img src="assest/img/logo.svg"></div>
               <div class="marca"><img src="assest/img/marca11.png"></div>
+              <div class="marca"><img src="assest/img/marca12.png"></div>
             </div>
           </div>
     </div>
 </section>
+
+  
+</main>
+
+<footer class="footer">
+    <div class="footer_contact">
+        <div class="icons_contact">
+            <button type="button" class="btn_footer">
+                <a class="btn_icons_footer" href="#">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </button>
+            <button type="button" class="btn_footer">
+                <a class="btn_icons_footer" href="#">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </button>
+            <button type="button" class="btn_footer">
+                <a class="btn_icons_footer" href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </button>
+            <button type="button" class="btn_footer">
+                <a class="btn_icons_footer" href="#">
+                    <i class="fa fa-google"></i>
+                </a>
+            </button>
+            <button type="button" class="btn_footer">
+                <a class="btn_icons_footer" href="#">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </button>
+            <button type="button" class="btn_footer">
+                <a class="btn_icons_footer" href="#">
+                    <i class="fa fa-github"></i>
+                </a>
+            </button>
+        </div>
+        <div class="footer_input">
+            <form action="#" method="post" autocomplete="off">
+                <label>¡Suscríbete!</label>
+                <input type="email" placeholder="ingrese tu correo" autocomplete="off" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer_container">
+        <div class="footer_logo">
+            <img src="assest/img/logo.svg">
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © 2023 Sports - Todos los derechos reservados.</p>
+    </div>
+</footer>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js'></script>
