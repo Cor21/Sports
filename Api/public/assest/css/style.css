@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     scrollbar-width: thin;
+    
     scrollbar-color: #333333 #000000;
 }
 
@@ -87,7 +88,7 @@ body::-webkit-scrollbar-thumb:hover {
     position: relative;
     left: 0;
     top: 0;
-    background-image: url('img/banner.jpg');
+    background-image: url('../img/banner.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -289,7 +290,7 @@ body::-webkit-scrollbar-thumb:hover {
     height: auto;
     display: grid;
     place-items: center;
-    background-image: url(img/banner_cat.svg);
+    background-image: url(../img/banner_cat.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -547,6 +548,10 @@ body::-webkit-scrollbar-thumb:hover {
   .copyright p{
     color: white;
   }
+
+  .btn_icons_footer:hover{
+    color: white;
+  }
 /* estilo modal de rastreo */
 
 .modal{
@@ -633,10 +638,139 @@ body::-webkit-scrollbar-thumb:hover {
 .modal-footer button:hover{
   background-color: gray;
 }
-::placeholder{
+.inp-index{
   color: white;
 }
 
 .modal-header button:hover{
   color: white;
 }
+
+/*Page Login-Register */
+
+.section_session{
+  position: relative;
+  width: 100%;
+  margin-top: 3%;
+  height: 90vh;
+  display: grid;
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  place-items: center;
+}
+
+.container_session{
+  position: relative;
+  width: 70%;
+  height: 75vh;
+  background-color: #fff;
+ 
+}
+.container_form {
+  width: 50%;
+  height: 100%;
+}
+.container_img{
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+
+}
+.container_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.buttons_form{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  
+}
+
+.buttonform{
+  position: relative;
+  width: 50%;
+  height: 8vh;
+  background-color: #000000;
+  color: white;
+  border: none;
+
+}
+.form_login{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.form_login h3{
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+}
+.parts_form{
+  width: 100%;
+
+}
+.parts_form label{
+  position: relative;
+  width: 100%;
+  left: 5%;
+  font-size: 15px;
+  color: #000;
+  margin-top: 5%;
+  transition: 0.5s;
+}
+
+.parts_form input{
+  position: relative;
+  left: 5%;
+  width: 85%;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+  color: #000;
+  transition: 0.5s;
+}
+
+.parts_form input:focus,
+.parts_form input:focus + .parts_form label {
+  border: 1px solid purple ;
+  color: purple;
+}
+
+.btn-enviar{
+  position: relative;
+  top: 30px;
+  left: 18%;
+  width: 60%;
+  height: 35px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  transition: 0.5s;
+}
+.btn-enviar:hover{
+  background-color: purple;
+}
+
+.form_register{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.form_register h3{
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+}
+
